@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "6175b14f-0959-4e1f-ad78-095bbdc1431e",
+		"name": "API inventario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "/products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"laptop\",\r\n    \"category\": \"laptop\",\r\n    \"price\":999.99,\r\n    \"imgURL\":\"https://www.lenovo.com/medias/lenovo-laptop-ideapad-z400-dark-chocolate-main.png?context=bWFzdGVyfGltYWdlc3wxNTkzODF8aW1hZ2UvcG5nfGltYWdlcy9oMTkvaDZmLzk0NTIxMDQ1ODExNTAucG5nfDZkODBmZDY3MDM2NGI0ODljMjI4ZTQ1ZmI3MmQxMmQ0NGE2OWI1NjkxYjcxOTlhOTM3NjY1ZWY2NmY5YzVmODU\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						},
+						"description": "Petición POST"
+					},
+					"response": []
+				},
+				{
+					"name": "/products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						},
+						"description": "Petición GET"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": []
+		},
+		{
+			"name": "auth",
+			"item": []
+		}
+	]
+}
